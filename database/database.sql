@@ -1,0 +1,10 @@
+CREATE DATABASE login_page IF NOT EXIST;
+
+USE login_page;
+
+CREATE TABLE users(
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    email VARCHAR(255) UNIQUE NOT NULL,
+    password VARCHAR(8) NOT NULL
+);
